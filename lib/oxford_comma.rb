@@ -1,22 +1,20 @@
-=begin
-def oxford_comma(array)
-  if array.length < 3
-    array.join(' and ')
+def oxford_comma(a)
+  if a.length > 2
+    last = a.pop
+    x = "#{a.join(", ")}, and #{last}"
   else
-    last_word = array.pop
-    array << 'and '
-    phrase = array.join(', ') << last_word
+    a.join (" and ")
   end
 end
-=end
 
-def oxford_comma(array)
-  if array.length > 2
-    x = array.join(', ')
-    y = x.rindex(',')
-    x[y + 1] = ' and '
-    x
-  else
-    array.join(' and ')
-  end
-end
+
+# def oxford_comma(array)
+#   if array.length > 2
+#     x = array.join(', ')
+#     y = x.rindex(',')
+#     x[y + 1] = ' and '
+#     x
+#   else
+#     array.join(' and ')
+#   end
+# end
