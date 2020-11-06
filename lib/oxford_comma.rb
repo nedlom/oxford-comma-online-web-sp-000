@@ -10,14 +10,14 @@ end
 
 
 
-def oxford_comma(a)
-  if a.length > 2
-    last = a.pop
-    x = "#{a.join(", ")}, and #{last}"
-  else
-    a.join (" and ")
-  end
-end
+# def oxford_comma(a)
+#   if a.length > 2
+#     last = a.pop
+#     x = "#{a.join(", ")}, and #{last}"
+#   else
+#     a.join (" and ")
+#   end
+# end
 
 
 # def oxford_comma(array)
